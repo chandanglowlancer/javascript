@@ -35,3 +35,34 @@ const id = Symbol("22");
 const anotherId = Symbol("22")
 
 console.log(id === anotherId); // output will be false because symbol is used for unique identification
+
+
+
+// Memories 
+// stack  used in premitive datatypes and heap used in non premitive data type
+
+
+let youtubeName = "hiteshChoudry"
+
+let anotheryoutubeName = youtubeName
+
+
+anotheryoutubeName = "chandan" // if we change this value the orginal value (referance value youtubeName) remains the same because its reserves a copy and changes  the copy in the memory orginal remains same 
+
+
+console.log(anotheryoutubeName);
+
+const userOne  = {
+    name : "chandan",
+    email: "mail@mail.com"
+}
+
+const userTwo = userOne
+
+console.log(userTwo);
+
+userOne.name = "name changed" // orginal value will also be changes (heap memory)
+
+console.log(userTwo);  
+
+
